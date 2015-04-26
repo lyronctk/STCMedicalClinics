@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SharedRoof</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+  <!-- mobile settings -->
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="/raw_assets/images/demo/favicon.ico" />
+
+  <!-- WEB FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
+
+  <!-- CORE CSS -->
+  <link href="/raw_assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/font-awesome.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/sky-forms.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/weather-icons.min.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/line-icons.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/plugins/owl-carousel/owl.pack.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/plugins/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/animate.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/flexslider.css" rel="stylesheet" type="text/css" />
+
+  <!-- REVOLUTION SLIDER -->
+  <link href="/raw_assets/css/revolution-slider.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/layerslider.css" rel="stylesheet" type="text/css" />
+
+  <!-- THEME CSS -->
+  <link href="/raw_assets/css/essentials.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/layout.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/header-default.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/footer-default.css" rel="stylesheet" type="text/css" />
+  <link href="/raw_assets/css/color_scheme/red.css" rel="stylesheet" type="text/css" id="color_scheme" />
+  <!--<link href="/raw_assets/css/layout-dark.css" rel="stylesheet" type="text/css"  />-->
+
+  <!-- Morenizr -->
+  <script type="text/javascript" src="/raw_assets/plugins/modernizr.min.js"></script>
+
+  <!--[if lte IE 8]>
+  <script src="/raw_assets/plugins/respond.js"></script>
+  <![endif]-->
+
+  <%= favicon_link_tag '/favicon.ico' %>
+</head>
+
+  <div id="header"><!-- class="sticky" for sticky menu -->
+
+        <!-- Top Bar -->
+        <header id="topBar">
+          <div class="container">
+            <!-- Logo -->
+            <a class="logo" href="/">
+              <img src="/raw_assets/images/logo.png"/>
+            </a>
+
+            <div class="pull-right fsize13 margin-top10 hide_mobile">
+
+              <!-- mail , phone -->
+              <br/>
+              <span>1-818-770-2677</span>
+              </br>
+              <a href="mailto:contact@sharedroofinvestments.com">contact@sharedroofinvestments.com</a>
+<!--
+              <p>1412 Old Oxford Road #400 Durham, North Carolina, 27704</p> -->
+
+            </div>
+
+          </div><!-- /.container -->
+        </header>
+        <!-- /Top Bar -->
+
+
+        <!-- Top Nav -->
+        <header id="topNav">
+          <div class="container">
+
+            <!-- Mobile Menu Button -->
+            <button class="btn btn-mobile" data-toggle="collapse" data-target=".nav-main-collapse">
+              <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Top Nav -->
+            <div class="navbar-collapse nav-main-collapse collapse">
+              <nav class="nav-main">
+
+                <!--
+                  NOTE
+
+                  For a regular link, remove "dropdown" class from LI tag and "dropdown-toggle" class from the href.
+                  Direct Link Example:
+
+                  <li>
+                    <a href="#">HOME</a>
+                  </li>
+                -->
+                <ul id="topMain" class="nav nav-pills nav-main">
+                  <%= mega_nav_link 'HOME', 'welcome', '/' %>
+                  <%= mega_nav_link 'INVEST', 'what we do', '/invest' %>
+                  <%= mega_nav_link 'FEES', 'no more no less', '/fees' %>
+                  <%= mega_nav_link 'TEAM', 'who we are', '/team' %>
+                  <%= mega_nav_link 'ALTERNATIVES', 'why us', '/alternatives' %>
+                  <%= mega_nav_link 'DURHAM', 'city on the move', '/durham' %>
+                  <%= mega_nav_link 'CONTACT', 'write us', '/contact' %>
+                </ul>
+
+              </nav>
+            </div>
+            <!-- /Top Nav -->
+
+          </div><!-- /.container -->
+        </header>
+        <!-- /Top Nav -->
+
+      </div>
+
+
+<body>
+
+<%= yield %>
+
+
+    <!-- JAVASCRIPT FILES -->
+    <script type="text/javascript" src="/raw_assets/plugins/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="/raw_assets/plugins/jquery.isotope.js"></script>
+    <script type="text/javascript" src="/raw_assets/plugins/masonry.js"></script>
+
+    <script type="text/javascript" src="/raw_assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/raw_assets/plugins/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/raw_assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/raw_assets/plugins/knob/js/jquery.knob.js"></script>
+    <script type="text/javascript" src="/raw_assets/plugins/flexslider/jquery.flexslider-min.js"></script>
+
+    <!-- REVOLUTION SLIDER -->
+    <script type="text/javascript" src="/raw_assets/plugins/revolution-slider/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="/raw_assets/plugins/revolution-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="/raw_assets/js/revolution_slider.js"></script>
+
+
+    <script type="text/javascript" src="/raw_assets/js/scripts.js"></script>
+
+</body>
+
+
+<a href="#" id="toTop"></a>
+
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="copyright">
+    <div class="container text-center fsize12">
+      &bull; Copyright 2015 &copy; Shared Roof Investments LLC. &bull; &nbsp;
+    </div>
+  </div>
+</footer>
+<!-- /FOOTER -->
+
+</html>
