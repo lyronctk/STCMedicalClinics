@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>SharedRoof</title>
+  <title>St Camillus Medical</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
@@ -53,22 +53,26 @@
         <!-- Top Bar -->
         <header id="topBar">
           <div class="container">
-            <!-- Logo -->
-            <a class="logo" href="/">
-              <img src="/raw_assets/images/logo.png"/>
-            </a>
 
             <div class="pull-right fsize13 margin-top10 hide_mobile">
 
               <!-- mail , phone -->
-              <br/>
-              <span>1-818-770-2677</span>
-              </br>
-              <a href="mailto:contact@sharedroofinvestments.com">contact@sharedroofinvestments.com</a>
-<!--
-              <p>1412 Old Oxford Road #400 Durham, North Carolina, 27704</p> -->
+              <a href="mailto:mail@yourdomain.com">mail@domain.com</a> &bull; 1800-555-1234 
+
+              <div class="block text-right"><!-- social -->
+                <a href="#" class="social fa fa-facebook"></a>
+                <a href="#" class="social fa fa-twitter"></a>
+                <a href="#" class="social fa fa-google-plus"></a>
+                <a href="#" class="social fa fa-linkedin"></a>
+                <a href="#" class="social fa fa-pinterest"></a>
+              </div><!-- /social -->
 
             </div>
+
+            <!-- Logo -->
+            <a class="logo" href="/">
+              <img src="/raw_assets/images/logo.png"/>
+            </a>
 
           </div><!-- /.container -->
         </header>
@@ -100,11 +104,10 @@
                 -->
                 <ul id="topMain" class="nav nav-pills nav-main">
                   <%= mega_nav_link 'HOME', 'welcome', '/' %>
-                  <%= mega_nav_link 'INVEST', 'what we do', '/invest' %>
-                  <%= mega_nav_link 'FEES', 'no more no less', '/fees' %>
+                  <%= mega_nav_link 'HEMODIALYSIS', 'clinic', '/hemodialysis' %>
+                  <%= mega_nav_link 'REHABILITATION', 'clinic', '/rehabilitation' %>
+                  <%= mega_nav_link 'AMENITIES', 'state of the art', '/amenities' %>
                   <%= mega_nav_link 'TEAM', 'who we are', '/team' %>
-                  <%= mega_nav_link 'ALTERNATIVES', 'why us', '/alternatives' %>
-                  <%= mega_nav_link 'DURHAM', 'city on the move', '/durham' %>
                   <%= mega_nav_link 'CONTACT', 'write us', '/contact' %>
                 </ul>
 
@@ -143,6 +146,8 @@
 
     <script type="text/javascript" src="/raw_assets/js/scripts.js"></script>
 
+    <script type="text/javascript" src="/raw_assets/plugins/styleswitcher/styleswitcher.js">/** REMOVE ON PRODUCTION **/</script>
+
 </body>
 
 
@@ -153,7 +158,7 @@
 <footer id="footer">
   <div class="copyright">
     <div class="container text-center fsize12">
-      &bull; Copyright 2015 &copy; Shared Roof Investments LLC. &bull; &nbsp;
+      &bull; Copyright 2015 &copy; Provident Medical LLC &bull; &nbsp;
     </div>
   </div>
 </footer>

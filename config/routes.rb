@@ -1,18 +1,16 @@
 Rails.application.routes.draw do
   root 'static_pages#home'
 
-  get 'invest' => 'static_pages#invest'
+  get 'amenities' => 'static_pages#amenities'
 
-  get 'fees' => 'static_pages#fees'
+  get 'hemodialysis' => 'static_pages#hemodialysis'
 
   get 'team' => 'static_pages#team'
 
   get 'contact'  => 'static_pages#contact'
   post 'contact' => 'static_pages#forward_form_email'
 
-  get 'alternatives' => 'static_pages#alternatives'
-
-  get 'durham' => 'static_pages#durham'
+  get 'rehabilitation' => 'static_pages#rehabilitation'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

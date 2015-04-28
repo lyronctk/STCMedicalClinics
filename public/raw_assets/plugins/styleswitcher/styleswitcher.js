@@ -176,9 +176,9 @@ jQuery(document).ready(function() {
 	/** ********************************************************************************************************** **/
 	function setActiveStyleSheet(title) {
 		if(title != 'null' && title != null) {
-			jQuery("#color_scheme").attr('href', 'assets/css/color_scheme/' + title + '.css');
+			jQuery("#color_scheme").attr('href', 'raw_assets/css/color_scheme/' + title + '.css');
 			if(jQuery("#css_dark_skin").length < 1) {
-				jQuery("a.logo img").attr('src', 'assets/images/demo/logo/' + title + '.png');
+				jQuery("a.logo img").attr('src', 'raw_assets/images/demo/logo/' + title + '.png');
 			}
 			createCookie("style", title, 365);
 

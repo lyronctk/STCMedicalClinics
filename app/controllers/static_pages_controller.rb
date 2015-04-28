@@ -4,10 +4,10 @@ class StaticPagesController < ApplicationController
   def home
   end
 
-  def invest
+  def amenities
   end
 
-  def fees
+  def hemodialysis
   end
 
   def team
@@ -16,10 +16,7 @@ class StaticPagesController < ApplicationController
   def contact
   end
 
-  def alternatives
-  end
-
-  def durham
+  def rehabilitation
   end
 
   def forward_form_email
