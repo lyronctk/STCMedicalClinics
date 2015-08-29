@@ -10,9 +10,6 @@ class StaticPagesController < ApplicationController
   def hemodialysis
   end
 
-  def team
-  end
-
   def contact
   end
 

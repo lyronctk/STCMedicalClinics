@@ -5,8 +5,6 @@ Rails.application.routes.draw do
 
   get 'hemodialysis' => 'static_pages#hemodialysis'
 
-  get 'team' => 'static_pages#team'
-
   get 'contact'  => 'static_pages#contact'
   post 'contact' => 'static_pages#forward_form_email'
 
