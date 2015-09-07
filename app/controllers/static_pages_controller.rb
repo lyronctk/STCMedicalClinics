@@ -18,4 +18,7 @@ class StaticPagesController < ApplicationController
 
   def forward_form_email
   end
+
+  def info
+  end
 end
