@@ -21,4 +21,8 @@ class StaticPagesController < ApplicationController
 
   def info
   end
+
+  def kidney
+  end
+  
 end
