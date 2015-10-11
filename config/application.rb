@@ -24,5 +24,6 @@ module SharedRoof
     config.active_record.raise_in_transactional_callbacks = true
     config.action_mailer.delivery_method = :postmark
     config.action_mailer.postmark_settings = { :api_token => "84ae0c8d-e4c7-4939-85e6-3611ac2abe63" }
+    config.autoload_paths += %W(#{config.root}/lib)
   end
 end
