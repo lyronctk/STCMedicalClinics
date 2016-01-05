@@ -67,6 +67,11 @@ li{
 
 .container{padding-right:65px;padding-left:65px;margin-right:auto;margin-left:auto}@media (min-width:768px){.container{width:750px}}@media (min-width:992px){.container{width:970px}}@media (min-width:1200px){.container{width:1170px}}
 
+.rec{
+	margin: 0 40px;
+	height:60px; 
+	width: 250px;
+}
 
 button::-moz-focus-inner, 
 input::-moz-focus-inner {
@@ -823,7 +828,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.4em;
+	font-size: 1.7em;
 	letter-spacing: normal;
 	line-height: 27px;
 	margin: 0 0 14px 0;
