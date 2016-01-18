@@ -9,8 +9,8 @@
   <!-- mobile settings -->
   <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="/raw_assets/images/demo/favicon.ico" />
+  <!-- FAVICON -->
+  <link rel="shortcut icon" href="/favicon.png" type="image/png">
 
   <!-- WEB FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
@@ -50,6 +50,10 @@
 
   <div id="header"><!-- class="sticky" for sticky menu -->
 
+        <% if flash[:notice] -%>
+          <div class="alert alert-success"><%= flash[:notice] %></div>
+        <% end %>
+
         <!-- Top Bar -->
         <header id="topBar">
           <div class="container">
@@ -67,7 +71,7 @@
 
             <!-- Logo -->
             <a class="logo" href="/">
-              <img src="/raw_assets/images/stCamillusLogo.png"/>
+              <img src="/raw_assets/images/logo.png"/>
             </a>
 
           </div><!-- /.container -->

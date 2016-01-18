@@ -24,6 +24,9 @@ class StaticPagesController < ApplicationController
 
   def forward_form_email
     ContactFormMailer.contact_form_email(params[:contact_email], params[:contact_subject], params[:contact_comment]).deliver_now
-    render "contact"
+    respond_to do |format|
+      format.html { redirect_to "/", notice: 'Email succesfully sent.' }
+      format.json { head :no_content }
+    end
   end
 end
