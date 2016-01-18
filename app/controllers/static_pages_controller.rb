@@ -16,13 +16,14 @@ class StaticPagesController < ApplicationController
   def rehabilitation
   end
 
-  def forward_form_email
-  end
-
   def info
   end
 
   def kidney
   end
-  
+
+  def forward_form_email
+    ContactFormMailer.contact_form_email(params[:contact_email], params[:contact_subject], params[:contact_comment]).deliver_now
+    render "contact"
+  end
 end

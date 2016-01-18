@@ -75,16 +75,14 @@ Rails.application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   # Do not dump schema after migrations.
-  config.active_record.dump_schema_after_migration = false
+  config.action_mailer.delivery_method = :smtp
 
-  ActionMailer::Base.smtp_settings = {
-  :port           => '25', # or 2525
-  :address        => 'smtp.postmarkapp.com',
-  :user_name      => '84ae0c8d-e4c7-4939-85e6-3611ac2abe63',
-  :password       => '84ae0c8d-e4c7-4939-85e6-3611ac2abe63',
-  :domain         => 'sharedroofinvestments.herokuapp.com',
-  :authentication => :cram_md5, # or :plain for plain-text authentication
-  :enable_starttls_auto => true, # or false for unencrypted connection
+  config.action_mailer.smtp_settings = {
+     :address              => "smtp.gmail.com",
+     :port                 => 587,
+     :user_name            => ENV['gmail_username'],
+     :password             => ENV['gmail_password'],
+     :authentication       => "plain",
+     :enable_starttls_auto => true
   }
-  ActionMailer::Base.delivery_method = :smtp
 end
