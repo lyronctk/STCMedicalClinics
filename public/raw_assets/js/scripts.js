@@ -61,7 +61,6 @@
 		Backstretch v2.0.4
 			http://srobbin.com/jquery-plugins/backstretch/
 *************************************************** **/
- 
 	/* Init */
 	jQuery(window).ready(function () {
 		Epona();
@@ -1052,11 +1051,11 @@ function _toggle() {
 	function showMap(initWhat) {
 		var script 		= document.createElement('script');
 		script.type 	= 'text/javascript';
-		script.src 		= 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=true&callback='+initWhat;
+		script.src 		= 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCEcCCKIzpnSctl8qbCQvB_FcTBlXNL-tE&v=3.exp&sensor=true&callback=' + initWhat;
+		console.log("hello from show map");
 		document.body.appendChild(script);
 	}
 
-	
 	// INIT CONTACT, ONLY IF #gmap EXISRS
 	if(jQuery("#gmap").length > 0) {
 		showMap('contactMap');

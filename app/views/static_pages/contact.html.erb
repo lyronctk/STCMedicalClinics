@@ -44,7 +44,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<input class="hidden" type="text" name="captcha" id="captcha" value="" /><!-- keep it hidden -->
-							<input type="submit" value="Send Message" class="btn btn-primary btn-lg" id="contact_submit" />
+							<input value="Send Message" class="btn btn-primary btn-lg" onclick="mailerFill();" />
 						</div>
 					</div>
 				</form>
@@ -59,6 +59,7 @@
 				<h2>Visit Us</h2>
 
 				<div id="gmap"><!-- google map --></div>
+				
 				<script type="text/javascript">
 					var	$googlemap_latitude 	= 14.631498,
 						$googlemap_longitude	= 121.00228420000008,
@@ -70,7 +71,7 @@
 				<p class="nomargin-bottom">
 					<span class="block" style="margin-bottom:10px"><strong><i class="fa fa-map-marker"></i> Address:</strong> 99 Don Manuel Agregado St., Quezon City, 1114</span>
 
-					<span class="block" style="margin-bottom:10px"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:02-7324557">02-7324557</a> or <a href="tel:02-7413408">02-7413408</a> or <a href="tel:02-4166505">02-4166505</a></span>
+					<span class="block" style="margin-bottom:10px"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:+632-8354-5903">+632-8354-5903</a> or <a href="tel:+632-8741-3408">+632-8741-3408</a> or <a href="tel:+632-8732-4557">+632-8732-4557</a> or <a href="tel:+632-7919-4087">+632-7919-4087</a></span>
 
 					<span class="block" style="margin-bottom:10px"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@stcmedicalclinics.com">info@stcmedicalclinics.com</a></span>
 				</p>
@@ -85,3 +86,9 @@
 	</div>
 </section>
 <!-- /CONTENT -->
+
+<script>
+function mailerFill() {
+	alert("This browser is unable to fulfill your message request at this time. If you would like to reach out, please email info@stcmedicalclinics.com. Thank you!");
+}
+</script>

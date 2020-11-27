@@ -16,7 +16,7 @@ gem 'activemodel'
 gem 'mail_form'
 gem 'figaro'
 
-
+gem 'logger'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
