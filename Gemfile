@@ -20,7 +20,7 @@ gem 'logger'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'sdoc', '~> 2.2.0', group: :doc
 gem 'postmark-rails'
 
 group :development, :test do
